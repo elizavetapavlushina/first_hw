@@ -5,5 +5,11 @@ int main(){
 	unsigned char c;
 	c = (a & 0x000000FF);
 	printf("first byte: %x\n", c);
+	c = ((a >> 8) & 0xFF);
+	printf("second byte: %x\n", c);
+	c = ((a >> 16) & 0xFF);
+        printf("third byte: %x\n", c);
+	c = ((a >> 24) & 0xFF);
+        printf("fourth byte: %x\n", c);
 
 }
